@@ -1,0 +1,17 @@
+<ul>
+  <% @actor_appears.each do |hash| %>
+    <li><a href= "/movies/<%= @page_id %>"><%= hash['title'] %></a></li>
+  <% end %>
+</ul>
+
+<ul>
+<% @actor_names.each do |actors| %>
+<%= actors['name'] %>
+<% end %>
+</ul>
+
+<ul>
+  <% @character_names.each do |character| %>
+  <%= character['character'] %>
+<%end%>
+</ul>
